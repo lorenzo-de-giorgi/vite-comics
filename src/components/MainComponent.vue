@@ -73,7 +73,7 @@
         span{
             text-transform: uppercase;
             font-size: 14px;
-            margin-left: 10px;
+            margin-left: 15px;
         }
 
         .img-locator{
