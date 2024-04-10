@@ -53,6 +53,10 @@
         font-size: 30px;
     }
 
+    main{
+        position: relative;
+    }
+
     .bottom-part{
         background-color: $bluetext;
         color: $white;

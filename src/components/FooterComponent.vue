@@ -40,6 +40,31 @@
     </div>
 
     <div class="footer-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <button class="button-signup">Sign-up now!</button>
+            </div>
+            <div class="social">
+                <ul class="d-flex align-items-center ">
+                    <span>Follow Us</span>
+                    <li>
+                        <a href=""><img src="../assets/img/footer-facebook.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../assets/img/footer-twitter.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../assets/img/footer-youtube.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../assets/img/footer-periscope.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -155,7 +180,7 @@
                         name: 'DC Power Visa',
                         url: '#'
                     }
-                ]
+                ],
             }
         },
     }
@@ -176,7 +201,7 @@
             color: $white;
             text-transform: uppercase;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 15px;
         }
 
         li{
@@ -188,18 +213,56 @@
         }
     }
 
-    .logo {
-        width: 500px;
+    .logo{
+        margin-top: -95px;
+
+        img{
+            width: 105%;
+        }
     }
 
-    .logo img {
-        position: absolute;
-        right: 50;
-        top: 300px;
-    }
+    // .logo {
+    //     width: 500px;
+    // }
+
+    // .logo img {
+    //     position: absolute;
+    //     right: 100px;
+    //     top: 300px;
+    // }
 
 
     .footer-bottom{
+        position: relative;
         background-color: $headertext;
+        margin-top: -80px;
+
+        .container{
+            padding: 30px;
+
+            .button-signup{
+            border: 3px solid $bluetext;
+            padding: 8px 15px;
+            text-transform: uppercase;
+            background-color: $headertext;
+            color: $white;
+            }
+            
+            .social{
+
+                span{
+                    color: $bluetext;
+                    text-transform: uppercase;
+                }
+
+                ul{
+                    list-style: none;
+                    
+                    li{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
     }
 </style>
