@@ -46,7 +46,7 @@
             </div>
             <div class="social">
                 <ul class="d-flex align-items-center ">
-                    <span>Follow Us</span>
+                    <span class="follow-us">Follow Us</span>
                     <li>
                         <a href=""><img src="../assets/img/footer-facebook.png" alt=""></a>
                     </li>
@@ -237,6 +237,13 @@
         background-color: $headertext;
         margin-top: -80px;
 
+        .follow-us{
+            color: $bluetext;
+            text-transform: uppercase;
+            margin-right: 40px;
+            font-size: 20px;
+        }
+
         .container{
             padding: 30px;
 
@@ -249,11 +256,6 @@
             }
             
             .social{
-
-                span{
-                    color: $bluetext;
-                    text-transform: uppercase;
-                }
 
                 ul{
                     list-style: none;
