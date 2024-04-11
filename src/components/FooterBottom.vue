@@ -51,6 +51,7 @@
             text-transform: uppercase;
             margin-right: 40px;
             font-size: 20px;
+            font-weight: 700;
         }
 
         .container{

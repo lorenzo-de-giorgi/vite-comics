@@ -3,10 +3,16 @@
         <div class="jumbo"></div>
         <div class="top-part">
             <div class="container">
+                <div class="t-y">
+                    <span class="current-series">Current Series</span>
+                </div>
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-4" v-for="(item, index) in comics" :key="index">
                         <CardComponent :thumb="item.thumb" :series="item.series" :price="item.price" :type="item.type" />
                     </div>
+                </div>
+                <div class="text-center">
+                    <button class="more">load more</button>
                 </div>
             </div>
         </div>
@@ -73,6 +79,28 @@
         font-weight: 600;
         padding: 40px;
         font-size: 30px;
+    }
+
+    .t-y{
+        transform: translateY(-140%);
+    }
+
+    .current-series{
+        background-color: $bluetext;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .more{
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 8px 45px;
+        background-color: $bluetext;
+        color: $white;
+        border: none;
+        font-weight: 600;
     }
 
     main{
