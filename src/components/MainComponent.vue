@@ -1,8 +1,9 @@
 <template>
     <main>
+        <div class="jumbo"></div>
         <div class="top-part">
             <div class="container">
-                <span> --> Content goes here <-- </span>
+                
             </div>
         </div>
         <div class="bottom-part">
@@ -33,11 +34,12 @@
 </template>
 
 <script>
+    import { comics } from '../data/comics.js'
     export default {
         name: 'MainComponent',
         data() {
             return {
-                
+                comics: comics
             }
         },
     }
@@ -45,6 +47,15 @@
 
 <style lang="scss" scoped>
     @use '../assets/styles/partials/_variables.scss' as *;
+
+    .jumbo{
+            background-image: url('../assets/img/jumbotron.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+    }
+
     .top-part{
         background-color: $mainbg;
         color: $white;
@@ -62,7 +73,6 @@
         color: $white;
 
         .container{
-
             div{
                 margin-right: 50px;
             }

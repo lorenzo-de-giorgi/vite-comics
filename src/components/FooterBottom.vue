@@ -30,7 +30,12 @@
 
 <script>
     export default {
-        name: 'FooterBottom'
+        name: 'FooterBottom',
+        data() {
+            return {
+
+            }
+        },
     }
 </script>
 

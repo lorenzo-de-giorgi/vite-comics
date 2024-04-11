@@ -173,11 +173,12 @@
             color: $white;
             text-transform: uppercase;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 17px;
         }
 
         li{
-            padding-top: 8px;
+            padding-top: 3px;
+            font-size: 14px;
             a{
                 text-decoration: none;
                 color: $grayfootertext;
