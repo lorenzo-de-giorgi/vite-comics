@@ -3,7 +3,11 @@
         <div class="jumbo"></div>
         <div class="top-part">
             <div class="container">
-                
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-2 mb-4" v-for="(item, index) in comics" :key="index">
+                        <CardComponent :thumb="item.thumb" :series="item.series" :price="item.price" :type="item.type" />
+                    </div>
+                </div>
             </div>
         </div>
         <div class="bottom-part">
@@ -34,13 +38,20 @@
 </template>
 
 <script>
-    import { comics } from '../data/comics.js'
+    import { comics } from '../data/store.js';
+    import CardComponent from './CardComponent.vue';
     export default {
         name: 'MainComponent',
+        components: {
+            CardComponent
+        },
         data() {
             return {
                 comics: comics
             }
+        },
+        mounted() {
+            console.log(this.comics)
         },
     }
 </script>
